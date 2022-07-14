@@ -11,12 +11,12 @@ export function Card(props: CardProps) {
         item: {
             code: props.card.code
         }
-    }));
+    }), [props]);
 
     return (
         <section className="card" ref={dragRef}>
-            <header>{props.card.title}</header>
-            <main>{props.card.priority}</main>
+            <header>{`[${props.card.code}] ${props.card.title}`}</header>
+            <main>Priority: {props.card.priority}</main>
             <footer>{props.card.status}</footer>
         </section>
     );
