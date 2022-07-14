@@ -37,6 +37,10 @@ code {
   border-right: 1px solid lightgray;
 }
 
+.column--hovering {
+  background-color: rgb(230, 230, 230);
+}
+
 .column__header {
   margin: 5px;
 }
